@@ -1,6 +1,6 @@
 """
 Crea una clase llamada Libro que represente un libro en una biblioteca. La clase debe tener los siguientes atributos:
-
+detalle aleatorio
 titulo: el título del libro
 autor: el autor del libro
 paginas: el número total de páginas
