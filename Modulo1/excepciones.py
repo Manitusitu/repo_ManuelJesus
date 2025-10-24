@@ -13,4 +13,35 @@ Finalmente, independientemente de si la operación tuvo éxito o no, la función
 
 """
 
+def dividir_numeros():
+    
+    try:
 
+        # Solicitar al usuario que introduzca dos números
+        numero1 = input("Escriba el primer numero: ")
+        numero2 = input("Escriba el segundo numero: ")
+        
+        # Convertir las entradas a números enteros
+        numero1entero = int(numero1)
+        numero2entero = int(numero2)
+        
+        # Realizar la división del primer número entre el segundo
+        division = numero1entero / numero2entero
+        
+        # Devolver el resultado de la división
+        print(f"Esta es la division: {division}")
+    
+    except ZeroDivisionError:
+        print (f"Error: No es posible dividir entre cero")
+    
+    except ValueError:
+        print(f"Error: Debes introducir un número válido")
+    
+    finally:
+        print(f"Operación finalizada")
+        
+    
+
+
+# Llamada a la función
+dividir_numeros()
